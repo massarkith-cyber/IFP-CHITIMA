@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IFP Chitima – Instituto de Formação de Professores</title>
+  <meta name="description" content="Instituto de Formação de Professores de Chitima – formando professores de qualidade." />
+  <style>
+    :root{
+      --primary:#1e6f5c;
+      --secondary:#f4f7f6;
+      --accent:#f2c94c;
+      --text:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.6;
+    }
+    header{
+      background:linear-gradient(120deg,var(--primary),#2f9e84);
+      color:#fff;
+      padding:2rem 1rem;
+    }
+    .container{max-width:1100px;margin:auto;padding:0 1rem}
+    nav{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    nav a{color:#fff;text-decoration:none;font-weight:600}
+    nav .links a{opacity:.95}
+    nav .links a:hover{opacity:1;text-decoration:underline}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;margin-top:2rem}
+    .hero h1{font-size:2.2rem;margin:.2rem 0}
+    .hero p{opacity:.95}
+    .badge{display:inline-block;background:rgba(255,255,255,.15);padding:.35rem .7rem;border-radius:999px;font-size:.85rem}
+    .cta{margin-top:1rem}
+    .btn{display:inline-block;background:var(--accent);color:#000;padding:.7rem 1rem;border-radius:.6rem;text-decoration:none;font-weight:700}
+    .btn.secondary{background:#fff;color:var(--primary)}
+    section{padding:3rem 0}
+    section.alt{background:var(--secondary)}
+    h2{font-size:1.8rem;margin-bottom:1rem}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+    .card{background:#fff;border-radius:1rem;padding:1.2rem;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+    .card h3{margin-top:0}
+    .list{padding-left:1rem}
+    .list li{margin:.4rem 0}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    .stat{background:#fff;border-radius:1rem;padding:1.2rem;text-align:center}
+    .stat strong{font-size:1.6rem;color:var(--primary)}
+    footer{background:#0f3f34;color:#e5f3ef;padding:2rem 0}
+    footer a{color:#e5f3ef}
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .stats{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:520px){
+      .grid{grid-template-columns:1fr}
+      .stats{grid-template-columns:1fr}
+      .hero h1{font-size:1.9rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><strong>IFP CHITIMA</strong></div>
+        <div class="links">
+          <a href="#sobre">Sobre</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#admissao">Admissão</a>
+          <a href="https://ifp.inece.co.mz/" target="_blank">Candidatar-se</a>
+          <a href="#contactos">Contactos</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div>
+          <span class="badge">Ministério da Educação e Cultura</span>
+          <h1>Instituto de Formação de Professores de Chitima</h1>
+          <p>Formando professores de qualidade, com compromisso, ética e excelência pedagógica para o desenvolvimento do país.</p>
+          <div class="cta">
+            <a class="btn" href="https://ifp.inece.co.mz/" target="_blank">Candidatar-se</a>
+            <a class="btn secondary" href="#cursos">Ver Cursos</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Mensagem Institucional</h3>
+          <p>O IFP de Chitima dedica-se à formação inicial e contínua de professores do ensino primário, promovendo inovação pedagógica, prática supervisionada e valores humanos.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre o Instituto</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Natureza</h3>
+          <p>O Instituto de Formação de Professores de Chitima é uma instituição vocacionada à formação de Professores do Ensino Primário e Educadores de Adultos, com vista à materialização dos objectivos do Ministério da Educação e Cultura, na formação inicial e em exercício.</p>
+        </div>
+        <div class="card">
+          <h3>Missão</h3>
+          <p>Assegurar a formação integral e em exercício dos professores do ensino primário, gestores escolares e educadores de adultos, capacitando-os para educar e formar jovens e adultos.</p>
+        </div>
+        <div class="card">
+          <h3>Visão</h3>
+          <p>Ser uma instituição comprometida com a qualidade na formação inicial e em exercício de professores, gestores das escolas primárias e educadores de adultos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cursos" class="alt">
+    <div class="container">
+      <h2>Cursos Oferecidos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Formação de Professores do Ensino Primário</h3>
+          <p><strong>Modelo de Formação:</strong> Formação inicial com duração de 3 anos, organizada por semestres, integrando teoria, prática pedagógica e estágio supervisionado.</p>
+          <details>
+            <summary><strong>1.º Ano</strong></summary>
+            <p><em>1.º Semestre</em></p>
+            <ul class="list">
+              <li>Psicologia da Educação</li>
+              <li>Introdução à Pedagogia</li>
+              <li>Português Instrumental</li>
+              <li>Tecnologias de Informação e Comunicação</li>
+            </ul>
+            <p><em>2.º Semestre</em></p>
+            <ul class="list">
+              <li>Didática Geral</li>
+              <li>Metodologia de Ensino do Português</li>
+              <li>Matemática Básica</li>
+              <li>Ética e Deontologia Profissional</li>
+            </ul>
+          </details>
+          <details>
+            <summary><strong>2.º Ano</strong></summary>
+            <p><em>3.º Semestre</em></p>
+            <ul class="list">
+              <li>Metodologia de Ensino da Matemática</li>
+              <li>Ciências da Natureza</li>
+              <li>Didática do Estudo do Meio</li>
+            </ul>
+            <p><em>4.º Semestre</em></p>
+            <ul class="list">
+              <li>Didática da Língua Portuguesa</li>
+              <li>Educação Inclusiva</li>
+              <li>Gestão e Organização Escolar</li>
+            </ul>
+          </details>
+          <details>
+            <summary><strong>3.º Ano</strong></summary>
+            <p><em>5.º Semestre</em></p>
+            <ul class="list">
+              <li>Prática Pedagógica Supervisionada I</li>
+              <li>Avaliação das Aprendizagens</li>
+            </ul>
+            <p><em>6.º Semestre</em></p>
+            <ul class="list">
+              <li>Prática Pedagógica Supervisionada II</li>
+              <li>Seminário de Formação</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admissao">
+    <div class="container">
+      <h2>Admissão</h2>
+      <p><strong>Nota:</strong> As candidaturas ao Instituto de Formação de Professores de Chitima são realizadas exclusivamente através do portal oficial de inscrição.</p>
+      <p>
+        <a class="btn" href="https://ifp.inece.co.mz/" target="_blank">Ir para o Portal de Inscrição</a>
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Requisitos</h3>
+          <ul class="list">
+            <li>Certificado do nível exigido</li>
+            <li>Documento de identificação</li>
+            <li>Processo completo conforme edital</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Processo</h3>
+          <p>Submissão do processo no portal oficial, verificação documental e realização de exames de admissão.</p>
+        </div>
+        <div class="card">
+          <h3>Editais</h3>
+          <p>Consulte os editais anuais publicados no portal de inscrição para prazos, vagas e critérios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <h2>Valores Institucionais</h2>
+      <div class="grid">
+        <div class="card"><h3>Dedicação</h3><p>Gestores, formadores, formandos e pessoal não docente desempenham as suas tarefas com empenho e responsabilidade.</p></div>
+        <div class="card"><h3>Compromisso</h3><p>Elevado grau de compromisso na concretização da missão institucional.</p></div>
+        <div class="card"><h3>Inovação e Criatividade</h3><p>Busca constante de soluções inovadoras para maior eficácia e eficiência.</p></div>
+        <div class="card"><h3>Respeito</h3><p>Respeito pelas diferenças étnicas, religiosas, de género e condição física.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Serviços Essenciais</h2>
+      <ul class="list">
+        <li>Promoção do acesso à formação de jovens e adultos</li>
+        <li>Melhoria da qualidade do processo de ensino e aprendizagem</li>
+        <li>Disponibilização de informação e documentação ao público</li>
+        <li>Preparação e monitoria da formação inicial e em exercício</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <h2>Atendimento e Funcionamento</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Formas de Atendimento</h3>
+          <p>Personalizado, cortesia, simpatia, imparcialidade, interajuda, zelo e correio electrónico.</p>
+        </div>
+        <div class="card">
+          <h3>Horário</h3>
+          <p>Segunda a Sexta-feira<br>Funcionamento: 6:20 – 18:25<br>Atendimento ao público: 7:30 – 15:30</p>
+        </div>
+        <div class="card">
+          <h3>Localização</h3>
+          <p>Bairro 1.º de Maio – Kaphaia<br>Vila de Chitima<br>Email: ifp.chitima@iyahoo.com.br</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contactos">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h3>Contactos</h3>
+          <p>Email: ifpchitima@exemplo.mz<br/>Telefone: +258 00 000 0000</p>
+        </div>
+        <div>
+          <h3>Localização</h3>
+          <p>Chitima, Moçambique</p>
+        </div>
+        <div>
+          <h3>Direitos</h3>
+          <p>© <span id="year"></span> IFP Chitima. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
